@@ -43,19 +43,80 @@
 					</p>
 
 					<aside class="notes">
-						Inspiration war dieser Post, der im SourceCenter rum ging.
+						Inspiration war dieser Post, der im SourceCenter herum ging.
 					</aside>
+				</section>
+				<section>
+					<h1>Don't be a <br /><i style="color: #ef391a">git</i>ar hero</h1>
+					<p class="fragment" data-fragment-index="0">
+						But how?
+					</p>
 				</section>
 				<section>
 					<h2>What is this `git rebase` you are talking about?</h2>
 					<p class="fragment" data-fragment-index="0">
-						From git-scm.com
+						<br />
+						From git-scm.com: <br />
 						<code>git-rebase - Reapply commits on top of another base tip</code>
 					</p>
 				</section>
 
 				<section>
+					<iframe data-src="https://learngitbranching.js.org/?gist_level_id=6c6aacfaa18de6f0c19a04e8bef3496e" style="height: 600px; width: 100%;"></iframe>
 
+					<aside class="notes">
+						Zuvor erwähnen: Rebasing hat keinen Einfluss auf das "GIT Flow" Konzept.<br />
+						---<br />
+						Übung:<br />
+						man möchte den Stand aus <b>master</b> in den feature branch übernehmen<br />
+						<code>
+							git merge master<br />
+						</code>
+						Zeige zwei Bäume, die dauerhaft bestehen bleiben<br />
+						<code>
+							reset<br />
+							clear<br />
+							git rebase master<br />
+						</code>
+						Zeige einen Baum<br /> 
+						---<br />
+						Rebasing ist die bessere Alternative zu `merge`, um Code <b>nachzuziehen</b> denn es hält den Commitbaum sauberer.<br />
+						Informationen über Branches kann man den Commitmessages entnehmen, falls überhaupt relevant
+					</aside>
+				</section>
+
+                <section>
+                    Rebasing interactive
+                    <iframe data-src="https://learngitbranching.js.org/?gist_level_id=bce99f6093330069a4ad10524362a01b" style="height: 600px; width: 100%;"></iframe>
+
+                    <aside class="notes">
+                        <ul>
+                            <li>Remove C3</li>
+                            <li>Move C4 before C2</li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <section>
+                    Showtime in Shell and IDE
+                    <aside class="notes">
+                        <ul>
+                            <li>Show pick, squash, reword, reorder</li>
+                            <li>Those should be the most used actions</li>
+                            <li></li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <section>
+                    Fast Forward Merge
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+				<section>
+					Be careful, there can be pitfalls
 				</section>
 
 				<section>
